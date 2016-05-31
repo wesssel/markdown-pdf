@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="large-12 column">
+        <h1>Posts</h1>
+    </div>
+    <div class="large-12 column">
+        <article ng-repeat="post in vm.posts">
+            <h4><a ng-href="/#/post/{{post._id}}">{{post.title}}</a></h4>
+            <wiz-markdown content="post.intro"></wiz-markdown>
+            <a href="#" ng-click="vm.removePost(post, $index)">X</a>
+        </article>
+    </div>
+</div>

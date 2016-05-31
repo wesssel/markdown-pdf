@@ -1,0 +1,14 @@
+{
+  "name": "mean-start",
+  "dependencies": {
+    "foundation": "~5.5.1",
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular-sanitize": "^1.5.5",
+    "wiz-markdown": "^1.3.0",
+    "highlightjs": "^9.4.0"
+  },
+  "resolutions": {
+    "angular": "~1.4.8"
+  }
+}

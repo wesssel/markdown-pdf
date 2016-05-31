@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="large-12 column">
+        <h1>Create</h1>
+    </div>
+    <div class="large-6 column">
+        <form ng-submit="vm.submitPost()">
+            <label>Title</label>
+            <input type="text" ng-model="vm.post.title" />
+            <label>Text</label>
+            <wiz-markdown-editor content="vm.post.text">
+                <wiz-toolbar-button command="undo">Unndo</wiz-toolbar-button>
+                <wiz-toolbar-button command="redo">Redo</wiz-toolbar-button>
+                <wiz-toolbar-button command="bold">Bold</wiz-toolbar-button>
+                <wiz-toolbar-button command="italic">Italic</wiz-toolbar-button>
+                <wiz-toolbar-button command="heading">Heading</wiz-toolbar-button>
+                <wiz-toolbar-button command="code">Code</wiz-toolbar-button>
+                <wiz-toolbar-button command="link">Link</wiz-toolbar-button>
+                <wiz-toolbar-button command="img">Img</wiz-toolbar-button>
+                <wiz-toolbar-button command="hr">HR</wiz-toolbar-button>
+                <wiz-toolbar-button command="tab">Tab</wiz-toolbar-button>
+            </wiz-markdown-editor>
+            <input type="submit" class="button" /> 
+        </form>
+        <print-post content="vm.post"></print-post>
+    </div>
+    <div class="large-6 column">
+        <wiz-markdown content="vm.post.text"></wiz-markdown>
+    </div>
+</div>
